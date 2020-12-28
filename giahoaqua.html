@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    Nhập tên hoa quả: <input type="text" id="hoaqua">
+    <button type="button" onclick="xemgia()">xem giá</button>
+</body>
+<script>
+    function xemgia() {
+        let hoaqua=document.getElementById("hoaqua").value
+        switch (hoaqua) {
+            case "ổi":
+            case "dưa hấu":
+                document.write("giá 20000");
+                break;
+            case "táo":
+            case "xoài":
+                document.write("giá 30000");
+                break;
+            case "cam":
+            case "chôm chôm":
+                document.write("giá 40000");
+                break;
+            case "măng cụt":
+                document.write("giá 50000");
+                break;
+        }
+    }
+</script>
+
+</html>
