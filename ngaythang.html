@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+</body>
+<script>
+    let ngay = prompt("nhập tháng");
+    switch (ngay) {
+        case "thang 1":
+        case "thang 3":
+        case "thang 5":
+        case "thang 7":
+        case "thu 12":
+            document.write("có 31 ngày");
+            break;
+        case "thang 4":
+        case "thang 6":
+        case "thang 11":
+            document.write("có 30 ngày");
+            break;
+        case "thang 2":
+            document.write("có 28 hoặc 29 ngày")
+        default:
+            Document.write("gia tri khong hop le");
+    }
+</script>
+
+</html>
