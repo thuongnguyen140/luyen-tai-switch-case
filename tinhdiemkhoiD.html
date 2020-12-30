@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tính điểm</title>
+</head>
+
+<body>
+    <table aria-colspan="2">
+        <h1 style="background-color:rgb(43, 213, 219);width: 400px;font-family: sans-serif;">TÍNH ĐIỂM THI ĐẠI HỌC</h1>
+        <tr>
+            <td style="color: blue;font-size: larger;">Nhập điểm Toán: </td>
+            <td> <input type="number" id="diemtoan"></td><br>
+            <td style="color: blue;font-size: larger;">Nhập điểm Văn: </td>
+            <td><input type="number" id="diemvan"></td>
+            <td style="color: blue; font-size: larger;">Nhập điểm Anh: </td>
+            <td><input type="number" id="diemanh"></td>
+        </tr>
+
+        <form>
+            <button type="button" onclick="tongdiem">Tổng điểm</button>
+            <input type="radio" id="kv1" name="demo" value="kv1">
+            <label for="kv1">Khu vực 1</label>
+            <input type="radio" id="kv2" name="demo" value="kv2">
+            <label for="kv2">Khu vực 2</label>
+            <input type="radio" id="kv3" name="demo" value="kv3">
+            <label for="kv3">Khu vực 3</label>
+            <input type="radio" id="kv4" name="demo" value="kv4">
+            <label for="kv4">Khu vực 4</label><br>
+            <input type="reset">
+        </form>
+    </table>
+    <br> <span id="ketqua" style="color: maroon; border-style: solid;">Tổng điểm thi đại học là: </span>
+</body>
+
+</html>
