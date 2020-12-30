@@ -18,21 +18,58 @@
             <td style="color: blue; font-size: larger;">Nhập điểm Anh: </td>
             <td><input type="number" id="diemanh"></td>
         </tr>
-
         <form>
-            <button type="button" onclick="tongdiem">Tổng điểm</button>
-            <input type="radio" id="kv1" name="demo" value="kv1">
+            <input type="radio" id="kv1" name="location" value="kv1">
             <label for="kv1">Khu vực 1</label>
-            <input type="radio" id="kv2" name="demo" value="kv2">
+            <input type="radio" id="kv2" name="location" value="kv2">
             <label for="kv2">Khu vực 2</label>
-            <input type="radio" id="kv3" name="demo" value="kv3">
+            <input type="radio" id="kv3" name="location" value="kv3">
             <label for="kv3">Khu vực 3</label>
-            <input type="radio" id="kv4" name="demo" value="kv4">
+            <input type="radio" id="kv4" name="location" value="kv4">
             <label for="kv4">Khu vực 4</label><br>
             <input type="reset">
         </form>
     </table>
-    <br> <span id="ketqua" style="color: maroon; border-style: solid;">Tổng điểm thi đại học là: </span>
+    <button type="button" onclick="tinhdiem()">Tính điểm</button>
+    <br><br> <span id="ketqua" style="color: maroon; border-style:dashed;">Tổng điểm thi đại học là: </span>
 </body>
+<script>
+    function tinhdiem() {
+let diemtoan = Number(document.getElementById('diemtoan').value);
+let diemvan = Number(document.getElementById('diemvan').value);
+let diemanh = Number(document.getElementById('diemanh').value);
+let tongcong3mon = diemtoan + diemvan + diemanh;
+console.log(tongcong3mon)
+
+let tongkhuvuc1 = tongcong3mon + 0.75
+let tongkhuvuc2 = tongcong3mon + 0.5
+let tongkhuvuc3 = tongcong3mon + 0.25
+let tongkhuvuc4 = tongcong3mon
+//let chonkhuvuc=document.getElementsByName('location');
+if (document.getElementById('kv1').checked){
+     console.log(tongkhuvuc1)
+}else if (document.getElementById('kv2').checked) {
+    console.log(tongkhuvuc2)
+}else if (document.getElementById('kv3').checked) {
+    console.log(tongkhuvuc3)
+}else if (document.getElementById('kv4').checked) {
+    console.log(tongkhuvuc4)
+}
+}
+/*let thang = prompt("nhập tháng");
+    switch (thang) {
+        case "thang 1":
+        case "thang 3":
+        case "thang 5":*/
+        
+    /*   Nhập vào ba số là điểm số của từng môn và lựa chọn khu vực
+   Nhấn nút “Tính điểm” thì sẽ hiển thị tổng điểm thi Đại học theo công thức
+   Tổng điểm = Điểm môn Toán + Điểm môn Văn + Điểm môn Anh + điểm khu vực, trong đó điểm khu vực được tính như sau:
+   
+   KV1: cộng 0.75 điểm
+   KV2-NT: cộng 0.5 điểm
+   KV2: cộng 0.25 điểm
+   KV3: không cộng điểm */
+</script>
 
 </html>
