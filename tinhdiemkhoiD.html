@@ -47,20 +47,15 @@ let tongkhuvuc3 = tongcong3mon + 0.25
 let tongkhuvuc4 = tongcong3mon
 //let chonkhuvuc=document.getElementsByName('location');
 if (document.getElementById('kv1').checked){
-     console.log(tongkhuvuc1)
+     document.getElementById('ketqua').innerHTML='Tổng điểm thi đại học là: ' + tongkhuvuc1
 }else if (document.getElementById('kv2').checked) {
-    console.log(tongkhuvuc2)
+    document.getElementById('ketqua').innerHTML='Tổng điểm thi đại học là: ' + tongkhuvuc2
 }else if (document.getElementById('kv3').checked) {
-    console.log(tongkhuvuc3)
+    document.getElementById('ketqua').innerHTML='Tổng điểm thi đại học là: ' + tongkhuvuc3
 }else if (document.getElementById('kv4').checked) {
-    console.log(tongkhuvuc4)
+    document.getElementById('ketqua').innerHTML='Tổng điểm thi đại học là: ' + tongkhuvuc4
 }
 }
-/*let thang = prompt("nhập tháng");
-    switch (thang) {
-        case "thang 1":
-        case "thang 3":
-        case "thang 5":*/
         
     /*   Nhập vào ba số là điểm số của từng môn và lựa chọn khu vực
    Nhấn nút “Tính điểm” thì sẽ hiển thị tổng điểm thi Đại học theo công thức
